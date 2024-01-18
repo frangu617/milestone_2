@@ -1,20 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
-import Navbar from './content/NavBar';
-import { useState } from 'react';
-
 import React from 'react';
 import { BrowserRouter as Router, Link, Routes, Route } from 'react-router-dom';
-import './App.css';
+import '../App.css';
 import { AppBar, Toolbar, Typography, Tabs, Tab, Container } from '@mui/material';
 
-import Home from './content/Home';
-import Profile from './content/Profile';
-import Diet from './content/Diet';
-import WorkOut from './content/WorkOut';
+import Home from './Home';
+import Profile from './Profile';
+import Diet from './Diet';
+import WorkOut from './WorkOut';
 
-function App() {
-
+function NavBar() {
+  
   return (
     <div className="App">
       <Router>
@@ -47,4 +42,4 @@ function App() {
   );
 }
 
-export default App;
+export default NavBar;
